@@ -4,6 +4,12 @@ import pymysql
 
 class student:
 # ==================انشاء نافذة البرنامج===========================
+     def hi():
+          
+          print("hellow")  
+     
+     
+     
      def __init__(self,root):
             self.root=root
             self.root.geometry('1280x690')
@@ -235,7 +241,7 @@ class student:
              
              self.student_table.delete(*self.student_table.get_children())
              for row in rows:
-               self.student_table.insert("", END, values=row)O
+               self.student_table.insert("", END, values=row)
              con.commit()
           con.close()    
 
